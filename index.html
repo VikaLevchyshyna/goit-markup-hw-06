@@ -53,7 +53,7 @@
          <!-- Features of work -->
         <section class="feature section">
            <div class="container">
-                <h2 hidden>Особенности работы</h2>
+                <h2 class="visually-hidden">Особенности работы</h2>
                 <ul class="list feature-list">
                     <li class="item">
                         <div class="icon-container">
@@ -330,67 +330,119 @@
     </main>
     <!-- Footer -->
     <footer class="contacts">
-        <div class="container">
-            <div class="contacts-address">
-                <a href="./index.html" class="link logo-1" lang="en">Web
-                    <span class="logo-3">Studio</span>
-                </a>
-                <address class="contacts-item">
-                    <ul class="list">
-                        <li>
-                            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+        <div class="container container-side">
+            <div class="left-side">
+                <div class="contacts-address">
+                    <a class="contacts-logo link logo-1" href="./index.html" lang="en">Web
+                        <span class="logo-3">Studio</span>
+                    </a>
+                    <address class="contacts-item">
+                        <ul class="list">
+                            <li class="address-item">
+                                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                            </li>
+                            <li class="address-item">
+                                <a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a>
+                            </li>
+                            <li class="address-item">
+                                <a href="tel:+380961111111" class="address">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="contacts-link">
+                    <b class="contacts-title">Присоединяйтесь</b> 
+                    <ul class="list-icon-contacts">
+                        <li class="contacts-icon-item">
+                            <a href="" class="link contacts-list-link">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li>
-                            <a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a>
+                        <li class="contacts-icon-item">
+                            <a href="" class="link contacts-list-link">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li>
-                            <a href="tel:+380961111111" class="address">+38 096 111 11 11</a>
+                        <li class="contacts-icon-item">
+                            <a href="" class="link contacts-list-link">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-icon-item">
+                            <a href="" class="link contacts-list-link">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="contacts-link">
-                <h3 class="contacts-title">Присоединяйтесь</h3>
-                <ul class="list-icon-contacts">
-                    <li class="contacts-icon-item">
-                        <a href="" class="link contacts-list-link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contacts-icon-item">
-                        <a href="" class="link contacts-list-link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contacts-icon-item">
-                        <a href="" class="link contacts-list-link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contacts-icon-item">
-                        <a href="" class="link contacts-list-link">
-                            <svg width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>           
+            <div class="right-side">
+                <b class="contacts-title">Подпишитесь на рассылку</b>
+                <form class="contacts-field">
+                    <input type="email" class="contacts-input" name="mail" placeholder="E-mail">
+                    <button type="submit" class="button contacts-button">
+                        <span class="text-button">Подписаться</span>
+                        <svg class="send-icon" width="24px" height="24px">
+                            <use href="./icon_2/icons.svg#icon-icon_send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="close-icon" width="11px" height="11px">
-                    <use href="./images/sprite.svg#icon-close"></use>
+                    <use href="./icon_2/icons.svg#icon-close-btn-11dp"></use>
                 </svg>
             </button>
+            <form class="form-modal">
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b> 
+                <label class="form-label">
+                    <span class="form-text">Имя</span>
+                    <span class="form-input-wrapper">
+                        <input type="text" class="form-input" name="user-name" />
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./icon_2/icons.svg#icon-person-black-18dp"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <span class="form-text">Телефон</span>
+                    <span class="form-input-wrapper">
+                        <input type="tel" class="form-input" name="user-tel" />
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./icon_2/icons.svg#icon-phone-black-18dp"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <span class="form-text">Почта</span>
+                    <span class="form-input-wrapper">
+                        <input type="email" class="form-input" name="user-mail" />
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./icon_2/icons.svg#icon-email-black-18dp"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <span class="form-text">Комментарий</span>
+                    <textarea name="user-comment" class="form-comment" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" class="form-term visually-hidden" name="user-policy" id="user-policy">
+                <label for="user-policy" class="form-description">Соглашаюсь с рассылкой и принимаю &nbsp;
+                    <a href="">Условия договора</a></label>
+                <button type="submit" class="button form-button">Отправить</button>         
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
